@@ -1,0 +1,367 @@
+
+
+/* Review Form Container */
+.review-box {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 25px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(200, 200, 200, 0.4); 
+    animation: slideInReview 0.4s ease-out;
+}
+
+.review-box h4 {
+    color: #333333;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: none;
+}
+
+.review-box label {
+    display: block;
+    color: #444444;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-shadow: none;
+}
+
+
+.review-box textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 80px;
+}
+
+.review-box textarea:focus {
+    outline: none;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.review-box textarea::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+.review-box select {
+    width: 180px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-box select:focus {
+    outline: none;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.review-box select:hover {
+    background: white;
+    transform: translateY(-1px);
+}
+
+.review-box select option {
+    background: white;
+    color: #333;
+    padding: 5px;
+}
+
+/* Button Container for Review Form */
+.review-box > div {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Enhanced Button Styles for Review Form */
+.review-box .btn {
+    width: auto !important;
+    min-width: 120px;
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #4CAF50, #45a049) !important;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.review-box .btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4) !important;
+    background: linear-gradient(45deg, #45a049, #4CAF50) !important;
+}
+
+.review-box .btn:active {
+    transform: translateY(0) !important;
+}
+
+.review-box .btn1 {
+    width: auto !important;
+    min-width: 120px;
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #f44336, #da190b) !important;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(244, 67, 54, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.review-box .btn1:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(244, 67, 54, 0.4) !important;
+    background: linear-gradient(45deg, #da190b, #f44336) !important;
+}
+
+.review-box .btn1:active {
+    transform: translateY(0) !important;
+}
+
+/* Enhanced Review Section */
+.review-section {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.review-section h4 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.review-section h4::before {
+    content: "💬";
+    font-size: 20px;
+}
+
+/* Enhanced Review Items */
+.review-item {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    padding: 18px !important;
+    border-radius: 12px !important;
+    margin-bottom: 12px !important;
+    border-left: 4px solid #667eea !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.review-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-header-info {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 10px !important;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.reviewer-name {
+    font-weight: bold !important;
+    color: #333 !important;
+    font-size: 15px;
+}
+
+.review-date {
+    color: #666 !important;
+    font-size: 13px !important;
+    background: rgba(102, 126, 234, 0.1);
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+.review-rating {
+    color: #ffd700 !important;
+    margin-bottom: 8px !important;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.review-text {
+    color: #555 !important;
+    line-height: 1.6 !important;
+    font-size: 14px;
+}
+
+.no-reviews {
+    text-align: center !important;
+    color: #666 !important;
+    font-style: italic !important;
+    padding: 30px !important;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    border: 2px dashed #ddd;
+}
+
+.no-reviews::before {
+    content: "😢";
+    display: block;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+/* Enhanced Review List */
+.reviews-list {
+    max-height: 400px !important;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.reviews-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.reviews-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.reviews-list::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 3px;
+}
+
+.reviews-list::-webkit-scrollbar-thumb:hover {
+    background: #5a67d8;
+}
+
+/* Animation for Review Form */
+@keyframes slideInReview {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Enhanced Button Review */
+.btnReview {
+    width: auto !important;
+    min-width: 140px !important;
+    padding: 12px 20px !important;
+    background: linear-gradient(45deg, #9e60f0, #7c3aed) !important;
+    color: white;
+    border: none;
+    border-radius: 20px !important;
+    font-size: 14px !important;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(158, 96, 240, 0.3);
+    margin-bottom: 15px;
+}
+
+.btnReview:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(158, 96, 240, 0.4) !important;
+    background: linear-gradient(45deg, #7c3aed, #9e60f0) !important;
+}
+
+.btnReview::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: left 0.5s;
+}
+
+.btnReview:hover::before {
+    left: 100%;
+}
+
+/* Responsive Design for Review Form */
+@media (max-width: 768px) {
+    .review-box {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    
+    .review-box > div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .review-box .btn,
+    .review-box .btn1 {
+        width: 100% !important;
+        max-width: 200px;
+    }
+    
+    .review-box textarea {
+        width: calc(100% - 16px);
+    }
+    
+    .review-box select {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .btnReview {
+        width: 100% !important;
+        max-width: 200px;
+    }
+    
+    .review-header-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
